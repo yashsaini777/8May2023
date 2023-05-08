@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "AlexBrush";
+    src: url("../fonts/AlexBrush-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0px;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 50px;
+    border: 2px dashed red;
+    font-family: "AlexBrush", Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: dashed 2px green;
+}
+
+footer {
+    height: 100px;
+}
+
+aside[data-leftAside="left"] {
+    width: 25%;
+    border: dashed 1px #000;
+    float: left;
+}
+
+section[data-section="mySection"] {
+    width: 50%;
+    border: dashed 1px black;
+    float: left;
+}
+
+aside[data-rightAside="right"] {
+    width: 24%;
+    border: dashed 1px #000;
+    float: left;
+}
+
+@media only screen and (max-width : 600px) {
+    body {
+        background-color: red;
+    }
+
+    aside[data-rightAside="right"] {
+        width: 22%;
+
+    }
+}
+
+@media only screen and (min-width : 600px) {
+    body {
+        background-color: green;
+    }
+}
